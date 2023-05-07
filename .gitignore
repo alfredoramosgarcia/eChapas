@@ -1,2 +1,28 @@
 # Ignora los archivos README
 README.*
+
+
+# Visual Studio / MonoDevelop generated
+/*.pidb
+/*.userprefs
+/*.csproj
+/*.sln
+/*.suo
+/*.tmp
+/*.user
+
+# OS generated
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# Unity3D generated meta files
+*.pidb.meta
+
+# Unity3D Generated File On Crash Reports
+sysinfo.txt
