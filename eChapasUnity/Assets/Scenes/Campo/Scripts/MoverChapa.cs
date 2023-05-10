@@ -16,7 +16,9 @@ public class MoverChapa : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0)) // Si se presiona el botón izquierdo del ratón (0 es el código para el botón izquierdo)
         {
-            Vector3 direccion = transform.forward; // Obtener la dirección en la que está apuntando el FPSController
+           Vector3 direccion = -(Camera.main.transform.position - transform.position).normalized;
+
+
 
             chapaRigidbody.AddForce(direccion * fuerza, ForceMode.Impulse); // Aplicar una fuerza a la chapa en la dirección del FPSController
         }
