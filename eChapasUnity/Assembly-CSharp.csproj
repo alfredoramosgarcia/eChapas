@@ -41,13 +41,17 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets/Scenes/Menu/Scripts/fullScreenController.cs" />
+     <Compile Include="Assets/Scenes/Menu/Scripts/optionController.cs" />
+     <Compile Include="Assets/Scenes/Menu/Scripts/options.cs" />
      <Compile Include="Assets/audioController.cs" />
      <Compile Include="Assets/Scenes/Menu/Scripts/mainMenu.cs" />
      <Compile Include="Assets/Scenes/Menu/Scripts/brightController.cs" />
      <Compile Include="Assets/Scenes/Menu/Scripts/sounds.cs" />
+     <Compile Include="Assets/Scenes/Menu/Scripts/movingObjectController.cs" />
      <Compile Include="Assets/Scenes/Menu/Scripts/audioController.cs" />
      <Compile Include="Assets/Scenes/Menu/Scripts/teamSelection.cs" />
      <Compile Include="Assets/Scenes/Menu/Scripts/graphicsController.cs" />
+     <Compile Include="Assets/Scenes/Menu/Scripts/friccionBola.cs" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
