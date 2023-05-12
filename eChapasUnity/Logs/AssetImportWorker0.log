@@ -2891,6 +2891,7 @@ Domain Reload Profiling:
 			RebuildScriptCaches (0ms)
 			SetupLoadedEditorAssemblies (362ms)
 				LogAssemblyErrors (0ms)
+<<<<<<< HEAD
 				InitializePlatformSupportModulesInManaged (24ms)
 				SetLoadedEditorAssemblies (8ms)
 				RefreshPlugins (0ms)
@@ -2967,6 +2968,24 @@ Unloading 3175 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 24 unused Assets / (397,6 KB). Loaded Objects now: 3867.
 Memory consumption went from 115,1 MB to 114,8 MB.
 Total: 4,196325 ms (FindLiveObjects: 0,304938 ms CreateObjectMapping: 0,340890 ms MarkObjects: 3,123285 ms  DeleteObjects: 0,425726 ms)
+=======
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (8ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (57ms)
+				ProcessInitializeOnLoadAttributes (252ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Refreshing native plugins compatible for Editor in 2,84 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Unloading 3068 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (30,5 KB). Loaded Objects now: 3657.
+Memory consumption went from 104,5 MB to 104,4 MB.
+Total: 3,825546 ms (FindLiveObjects: 0,257568 ms CreateObjectMapping: 0,163273 ms MarkObjects: 3,366443 ms  DeleteObjects: 0,036683 ms)
+>>>>>>> parent of 7a5705b ([Update] Avance menu partido)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
