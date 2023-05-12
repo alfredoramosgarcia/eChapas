@@ -20,14 +20,10 @@ MonoBehaviour:
     height: 983
   m_ShowMode: 4
 <<<<<<< HEAD
-<<<<<<< HEAD
   m_Title: Game
 =======
   m_Title: Project
 >>>>>>> main
-=======
-  m_Title: Console
->>>>>>> parent of b1cc2bb (he)
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 371}
   m_MaxSize: {x: 10000, y: 10000}
@@ -56,15 +52,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
   controlID: 50
-=======
-  controlID: 21
->>>>>>> parent of 7a5705b ([Update] Avance menu partido)
-=======
-  controlID: 53
->>>>>>> parent of b1cc2bb (he)
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -85,23 +73,17 @@ MonoBehaviour:
     width: 462
 <<<<<<< HEAD
     height: 934
-<<<<<<< HEAD
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
 =======
     height: 933
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 15}
->>>>>>> main
-=======
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 15}
->>>>>>> parent of b1cc2bb (he)
+>>>>>>> main
   m_Panes:
-  - {fileID: 15}
+  - {fileID: 14}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &4
@@ -123,30 +105,16 @@ MonoBehaviour:
     y: 0
 <<<<<<< HEAD
     width: 376
-<<<<<<< HEAD
     height: 609
 =======
     width: 364
-<<<<<<< HEAD
     height: 575
 >>>>>>> main
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 15}
-=======
-    height: 574
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 16}
->>>>>>> parent of 7a5705b ([Update] Avance menu partido)
-=======
-    height: 575
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 16}
->>>>>>> parent of b1cc2bb (he)
   m_Panes:
-  - {fileID: 16}
+  - {fileID: 15}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &5
@@ -165,32 +133,20 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
     y: 609
     width: 1458
 <<<<<<< HEAD
     height: 325
-=======
-    y: 575
-    width: 1458
-    height: 359
->>>>>>> parent of b1cc2bb (he)
   m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 19}
+  m_ActualView: {fileID: 18}
   m_Panes:
-  - {fileID: 14}
-  - {fileID: 19}
+  - {fileID: 13}
+  - {fileID: 18}
   m_Selected: 1
   m_LastSelected: 0
 =======
     height: 358
-=======
-    y: 574
-    width: 1458
-    height: 359
->>>>>>> parent of 7a5705b ([Update] Avance menu partido)
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 14}
@@ -295,15 +251,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-<<<<<<< HEAD
-<<<<<<< HEAD
   controlID: 51
-=======
-  controlID: 22
->>>>>>> parent of 7a5705b ([Update] Avance menu partido)
-=======
-  controlID: 54
->>>>>>> parent of b1cc2bb (he)
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -324,8 +272,6 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1458
-<<<<<<< HEAD
-<<<<<<< HEAD
     height: 609
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
@@ -335,20 +281,6 @@ MonoBehaviour:
 =======
   controlID: 45
 >>>>>>> main
-=======
-    height: 574
-  m_MinSize: {x: 200, y: 50}
-  m_MaxSize: {x: 16192, y: 8096}
-  vertical: 0
-  controlID: 23
->>>>>>> parent of 7a5705b ([Update] Avance menu partido)
-=======
-    height: 575
-  m_MinSize: {x: 200, y: 50}
-  m_MaxSize: {x: 16192, y: 8096}
-  vertical: 0
-  controlID: 23
->>>>>>> parent of b1cc2bb (he)
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -359,7 +291,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
+  m_Name: GameView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -368,64 +300,21 @@ MonoBehaviour:
     y: 0
 <<<<<<< HEAD
     width: 1082
-<<<<<<< HEAD
     height: 609
 =======
     width: 1094
-<<<<<<< HEAD
     height: 575
 >>>>>>> main
-=======
-    height: 574
->>>>>>> parent of 7a5705b ([Update] Avance menu partido)
-=======
-    height: 575
->>>>>>> parent of b1cc2bb (he)
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
+  - {fileID: 16}
   - {fileID: 17}
-  - {fileID: 18}
-  - {fileID: 13}
   - {fileID: 12}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12111, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 455, y: 354}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Asset Store
-    m_Image: {fileID: -8693916549880196297, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 364
-    y: 87
-    width: 1092
-    height: 549
-  m_SerializedDataModeController:
-    m_DataMode: 0
-    m_PreferredDataMode: 0
-    m_SupportedDataModes: 
-    isAutomatic: 1
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-    m_OverlaysVisible: 1
---- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -445,10 +334,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 361
+    x: 376
     y: 86
-    width: 1095
-    height: 549
+    width: 1080
+    height: 554
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -495,7 +384,7 @@ MonoBehaviour:
   m_CurrentEditor: 1
   m_LayerEditor:
     m_SelectedLayerIndex: 0
---- !u!114 &14
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -517,8 +406,6 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     y: 695
     width: 1457
     height: 304
@@ -527,16 +414,6 @@ MonoBehaviour:
     width: 1457
     height: 337
 >>>>>>> main
-=======
-    y: 661
-    width: 1457
-    height: 338
->>>>>>> parent of 7a5705b ([Update] Avance menu partido)
-=======
-    y: 661
-    width: 1457
-    height: 338
->>>>>>> parent of b1cc2bb (he)
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -561,18 +438,10 @@ MonoBehaviour:
     m_SearchArea: 1
     m_Folders:
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     - Assets
 =======
     - Assets/Scenes/Prueba
 >>>>>>> main
-=======
-    - Assets/Scenes/Menu/Scripts
->>>>>>> parent of 7a5705b ([Update] Avance menu partido)
-=======
-    - Assets/Standard Assets/Characters/FirstPersonCharacter/Prefabs
->>>>>>> parent of b1cc2bb (he)
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -580,26 +449,16 @@ MonoBehaviour:
   m_StartGridSize: 16
   m_LastFolders:
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   - Assets
 =======
   - Assets/Scenes/Prueba
 >>>>>>> main
-=======
-  - Assets/Scenes/Menu/Scripts
->>>>>>> parent of 7a5705b ([Update] Avance menu partido)
-=======
-  - Assets/Standard Assets/Characters/FirstPersonCharacter/Prefabs
->>>>>>> parent of b1cc2bb (he)
   m_LastFoldersGridSize: 16
   m_LastProjectPath: /home/samuelfp/ProyectoDSH/eChapas/eChapasUnity
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-<<<<<<< HEAD
     scrollPos: {x: 0, y: 0}
-<<<<<<< HEAD
 <<<<<<< HEAD
     m_SelectedIDs: 84bd0000
     m_LastClickedID: 48516
@@ -609,17 +468,6 @@ MonoBehaviour:
     m_LastClickedID: 7752
     m_ExpandedIDs: 000000009a6c0000a66c0000c86c0000ca6c000000ca9a3bffffff7f
 >>>>>>> main
-=======
-    m_SelectedIDs: a85a0000
-    m_LastClickedID: 23208
-    m_ExpandedIDs: 000000007c5a0000885a0000aa5a000000ca9a3bffffff7f
->>>>>>> parent of 7a5705b ([Update] Avance menu partido)
-=======
-    scrollPos: {x: 0, y: 2}
-    m_SelectedIDs: 16720000
-    m_LastClickedID: 29206
-    m_ExpandedIDs: 00000000446a0000506a0000766a0000fa6a0000fe6a0000026b0000266b00003a6b0000ee70000000ca9a3bffffff7f
->>>>>>> parent of b1cc2bb (he)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -648,18 +496,10 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     m_ExpandedIDs: 00000000886c00008a6c00008c6c00008e6c0000906c0000926c0000946c0000966c0000986c00009a6c0000
 =======
     m_ExpandedIDs: 000000009a6c0000
 >>>>>>> main
-=======
-    m_ExpandedIDs: 000000007c5a0000
->>>>>>> parent of 7a5705b ([Update] Avance menu partido)
-=======
-    m_ExpandedIDs: 00000000446a0000
->>>>>>> parent of b1cc2bb (he)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -685,23 +525,16 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
 <<<<<<< HEAD
-<<<<<<< HEAD
     m_SelectedInstanceIDs: b00effff
     m_LastClickedInstanceID: -61776
 =======
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
 >>>>>>> main
-=======
-    m_SelectedInstanceIDs: bc690000
-    m_LastClickedInstanceID: 27068
->>>>>>> parent of b1cc2bb (he)
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000000000007a690000
+    m_ExpandedInstanceIDs: c62300007a69000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
 <<<<<<< HEAD
       m_Name: 
       m_OriginalName: 
@@ -709,14 +542,6 @@ MonoBehaviour:
       m_Name: Scenes
       m_OriginalName: Scenes
 >>>>>>> main
-=======
-      m_Name: graphicsController
-      m_OriginalName: graphicsController
->>>>>>> parent of 7a5705b ([Update] Avance menu partido)
-=======
-      m_Name: TextMesh Pro
-      m_OriginalName: TextMesh Pro
->>>>>>> parent of b1cc2bb (he)
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
@@ -724,21 +549,13 @@ MonoBehaviour:
         width: 0
         height: 0
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       m_UserData: 0
 =======
       m_UserData: 27858
 >>>>>>> main
-=======
-      m_UserData: 35894
->>>>>>> parent of 7a5705b ([Update] Avance menu partido)
-=======
-      m_UserData: 27218
->>>>>>> parent of b1cc2bb (he)
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
@@ -752,7 +569,7 @@ MonoBehaviour:
     m_GridSize: 16
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
---- !u!114 &15
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -799,7 +616,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
---- !u!114 &16
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -823,20 +640,12 @@ MonoBehaviour:
 <<<<<<< HEAD
     y: 86
     width: 375
-<<<<<<< HEAD
     height: 588
 =======
     y: 87
     width: 363
-<<<<<<< HEAD
     height: 554
 >>>>>>> main
-=======
-    height: 553
->>>>>>> parent of 7a5705b ([Update] Avance menu partido)
-=======
-    height: 554
->>>>>>> parent of b1cc2bb (he)
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -851,8 +660,6 @@ MonoBehaviour:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: 2cfbffff
@@ -861,16 +668,6 @@ MonoBehaviour:
       m_LastClickedID: 0
       m_ExpandedIDs: 82f8feff1e19ffffe028ffff5a2cffff842dffff402ffffff231ffff6c36ffff5a3bffffba3dffff9443ffff2044ffff9e48ffff904cffff5a50ffff2c52ffff9a54ffff7656ffff2462ffffae6fffff767cffffa28bffff2492ffff409effff74b0ffff72b1ffff6ccfffff62d6ffff36e3fffff4ffffff2c890000149d0000f4ac000062ad000090b40000ecb500005ab60000bebd00001ecc00006acc000016ce00003ed4000084d70000bce0000054ed00005ef10000a2f1000014f200008af20000
 >>>>>>> main
-=======
-      m_SelectedIDs: 368c0000
-      m_LastClickedID: 0
-      m_ExpandedIDs: daf8ffff2efbffff74590000ca590000225a0000
->>>>>>> parent of 7a5705b ([Update] Avance menu partido)
-=======
-      m_SelectedIDs: bc690000
-      m_LastClickedID: 27068
-      m_ExpandedIDs: 4681ffff32eaffffb2690000
->>>>>>> parent of b1cc2bb (he)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -894,7 +691,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
---- !u!114 &17
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -918,21 +715,13 @@ MonoBehaviour:
     x: 376
     y: 86
     width: 1080
-<<<<<<< HEAD
     height: 588
 =======
     x: 364
     y: 87
     width: 1092
-<<<<<<< HEAD
     height: 554
 >>>>>>> main
-=======
-    height: 553
->>>>>>> parent of 7a5705b ([Update] Avance menu partido)
-=======
-    height: 554
->>>>>>> parent of b1cc2bb (he)
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -999,7 +788,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 25}
+      snapOffset: {x: 0, y: 26}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-transform-toolbar
@@ -1048,7 +837,6 @@ MonoBehaviour:
       sizeOverriden: 0
     - dockPosition: 1
 <<<<<<< HEAD
-<<<<<<< HEAD
       containerId: overlay-toolbar__top
 =======
       containerId: overlay-container--right
@@ -1078,16 +866,14 @@ MonoBehaviour:
       size: {x: 0, y: 0}
       sizeOverriden: 0
     - dockPosition: 1
-=======
->>>>>>> parent of b1cc2bb (he)
       containerId: overlay-container--right
       floating: 0
       collapsed: 0
-      displayed: 1
+      displayed: 0
       snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
-      id: Scene View/Camera
+      id: Scene View/Cloth Constraints
       index: 1
       layout: 4
       size: {x: 0, y: 0}
@@ -1100,21 +886,8 @@ MonoBehaviour:
       snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
-      id: Scene View/Cloth Constraints
-      index: 2
-      layout: 4
-      size: {x: 0, y: 0}
-      sizeOverriden: 0
-    - dockPosition: 1
-      containerId: overlay-container--right
-      floating: 0
-      collapsed: 0
-      displayed: 0
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
       id: Scene View/Cloth Collisions
-      index: 3
+      index: 2
       layout: 4
       size: {x: 0, y: 0}
       sizeOverriden: 0
@@ -1166,7 +939,7 @@ MonoBehaviour:
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Occlusion Culling
-      index: 4
+      index: 3
       layout: 4
       size: {x: 0, y: 0}
       sizeOverriden: 0
@@ -1179,7 +952,7 @@ MonoBehaviour:
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Physics Debugger
-      index: 5
+      index: 4
       layout: 4
       size: {x: 0, y: 0}
       sizeOverriden: 0
@@ -1192,7 +965,7 @@ MonoBehaviour:
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Scene Visibility
-      index: 6
+      index: 5
       layout: 4
       size: {x: 0, y: 0}
       sizeOverriden: 0
@@ -1205,7 +978,7 @@ MonoBehaviour:
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Particles
-      index: 7
+      index: 6
       layout: 4
       size: {x: 0, y: 0}
       sizeOverriden: 0
@@ -1244,7 +1017,7 @@ MonoBehaviour:
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/TrailRenderer
-      index: 8
+      index: 7
       layout: 4
       size: {x: 0, y: 0}
       sizeOverriden: 0
@@ -1273,8 +1046,6 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_Position:
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     m_Target: {x: -8.550002, y: 0.1, z: 18.620007}
     speed: 2
     m_Value: {x: -8.550002, y: 0.1, z: 18.620007}
@@ -1283,16 +1054,6 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 534.00256, y: 274.4572, z: -201.56024}
 >>>>>>> main
-=======
-    m_Target: {x: 535.2632, y: 287.49808, z: -22.088608}
-    speed: 2
-    m_Value: {x: 535.2632, y: 287.49808, z: -22.088608}
->>>>>>> parent of 7a5705b ([Update] Avance menu partido)
-=======
-    m_Target: {x: 18.67, y: 9.5, z: 11.189999}
-    speed: 2
-    m_Value: {x: 18.669981, y: 9.49999, z: 11.189982}
->>>>>>> parent of b1cc2bb (he)
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1339,42 +1100,26 @@ MonoBehaviour:
     m_gridOpacity: 0.5
   m_Rotation:
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     m_Target: {x: -0.097561, y: 0.24697737, z: -0.02507979, w: -0.9638315}
-=======
-    m_Target: {x: -0.055348393, y: -0.035017937, z: 0.0018870974, w: -0.99789226}
->>>>>>> parent of b1cc2bb (he)
     speed: 2
-    m_Value: {x: -0.053851966, y: -0.03352235, z: 0.0017537086, w: -0.9979845}
+    m_Value: {x: -0.09755534, y: 0.24696304, z: -0.025078334, w: -0.9637755}
   m_Size:
-    m_Target: 12.124355
+    m_Target: 23.347195
     speed: 2
-<<<<<<< HEAD
     m_Value: 23.347195
 =======
     m_Target: {x: -0.07137658, y: -0.022206867, z: -0.0015718392, w: 0.9972225}
-=======
-    m_Target: {x: 0.10226212, y: -0.0046404595, z: 0.00047729362, w: 0.994765}
->>>>>>> parent of 7a5705b ([Update] Avance menu partido)
     speed: 2
-    m_Value: {x: 0.10226024, y: -0.0046403743, z: 0.00047728486, w: 0.99474674}
+    m_Value: {x: -0.07137504, y: -0.02220639, z: -0.0015718054, w: 0.9972011}
   m_Size:
-    m_Target: 192.29936
+    m_Target: 213.5442
     speed: 2
-<<<<<<< HEAD
     m_Value: 213.5442
 >>>>>>> main
-=======
-    m_Value: 192.29936
->>>>>>> parent of 7a5705b ([Update] Avance menu partido)
-=======
-    m_Value: 12.124342
->>>>>>> parent of b1cc2bb (he)
   m_Ortho:
-    m_Target: 1
+    m_Target: 0
     speed: 2
-    m_Value: 1
+    m_Value: 0
   m_CameraSettings:
     m_Speed: 1
     m_SpeedNormalized: 0.5
@@ -1395,7 +1140,7 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &18
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1419,21 +1164,13 @@ MonoBehaviour:
     x: 376
     y: 86
     width: 1080
-<<<<<<< HEAD
     height: 588
 =======
     x: 364
     y: 87
     width: 1092
-<<<<<<< HEAD
     height: 554
 >>>>>>> main
-=======
-    height: 553
->>>>>>> parent of 7a5705b ([Update] Avance menu partido)
-=======
-    height: 554
->>>>>>> parent of b1cc2bb (he)
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1451,18 +1188,10 @@ MonoBehaviour:
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   m_TargetSize: {x: 1080, y: 567}
 =======
   m_TargetSize: {x: 1092, y: 533}
 >>>>>>> main
-=======
-  m_TargetSize: {x: 1092, y: 532}
->>>>>>> parent of 7a5705b ([Update] Avance menu partido)
-=======
-  m_TargetSize: {x: 1080, y: 533}
->>>>>>> parent of b1cc2bb (he)
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -1480,24 +1209,14 @@ MonoBehaviour:
 <<<<<<< HEAD
     m_HBaseRangeMin: -540
     m_HBaseRangeMax: 540
-<<<<<<< HEAD
     m_VBaseRangeMin: -283.5
     m_VBaseRangeMax: 283.5
 =======
     m_HBaseRangeMin: -546
     m_HBaseRangeMax: 546
-<<<<<<< HEAD
     m_VBaseRangeMin: -266.5
     m_VBaseRangeMax: 266.5
 >>>>>>> main
-=======
-    m_VBaseRangeMin: -266
-    m_VBaseRangeMax: 266
->>>>>>> parent of 7a5705b ([Update] Avance menu partido)
-=======
-    m_VBaseRangeMin: -266.5
-    m_VBaseRangeMax: 266.5
->>>>>>> parent of b1cc2bb (he)
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1506,7 +1225,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -1517,23 +1236,15 @@ MonoBehaviour:
       y: 21
 <<<<<<< HEAD
       width: 1080
-      height: 533
+      height: 567
     m_Scale: {x: 1, y: 1}
-<<<<<<< HEAD
     m_Translation: {x: 540, y: 283.5}
 =======
       width: 1092
-      height: 532
+      height: 533
     m_Scale: {x: 1, y: 1}
-<<<<<<< HEAD
     m_Translation: {x: 546, y: 266.5}
 >>>>>>> main
-=======
-    m_Translation: {x: 546, y: 266}
->>>>>>> parent of 7a5705b ([Update] Avance menu partido)
-=======
-    m_Translation: {x: 540, y: 266.5}
->>>>>>> parent of b1cc2bb (he)
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -1542,35 +1253,27 @@ MonoBehaviour:
       serializedVersion: 2
 <<<<<<< HEAD
       x: -540
-      y: -266.5
+      y: -283.5
       width: 1080
-      height: 533
+      height: 567
     m_MinimalGUI: 1
   m_defaultScale: 1
-<<<<<<< HEAD
   m_LastWindowPixelSize: {x: 1080, y: 588}
 =======
       x: -546
-      y: -266
+      y: -266.5
       width: 1092
-      height: 532
+      height: 533
     m_MinimalGUI: 1
   m_defaultScale: 1
-<<<<<<< HEAD
   m_LastWindowPixelSize: {x: 1092, y: 554}
 >>>>>>> main
-=======
-  m_LastWindowPixelSize: {x: 1092, y: 553}
->>>>>>> parent of 7a5705b ([Update] Avance menu partido)
-=======
-  m_LastWindowPixelSize: {x: 1080, y: 554}
->>>>>>> parent of b1cc2bb (he)
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &19
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1591,9 +1294,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 661
+    y: 695
     width: 1457
-    height: 338
+    height: 304
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
