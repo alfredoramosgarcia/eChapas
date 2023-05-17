@@ -42,7 +42,6 @@
   <ItemGroup>
      <Compile Include="Assets/Scenes/Menu/Scripts/fullScreenController.cs" />
      <Compile Include="Assets/Scenes/Menu/Scripts/optionController.cs" />
-     <Compile Include="Assets/Scenes/Prueba/capCollision.cs" />
      <Compile Include="Assets/MoverChapa.cs" />
      <Compile Include="Assets/Scenes/Menu/Scripts/options.cs" />
      <Compile Include="Assets/audioController.cs" />
@@ -53,13 +52,16 @@
      <Compile Include="Assets/ObjectController.cs" />
      <Compile Include="Assets/Scenes/Menu/Scripts/sounds.cs" />
      <Compile Include="Assets/Porteria.cs" />
+     <Compile Include="Assets/Scenes/Prueba/script animaciones/soccerPlayer.cs" />
      <Compile Include="Assets/Scenes/Menu/Scripts/movingObjectController.cs" />
      <Compile Include="Assets/Esfera.cs" />
      <Compile Include="Assets/Scenes/Menu/Scripts/audioController.cs" />
+     <Compile Include="Assets/Scenes/Prueba/script animaciones/capCollision.cs" />
+     <Compile Include="Assets/Scenes/Prueba/playerMove.cs" />
      <Compile Include="Assets/Scenes/Menu/Scripts/teamSelection.cs" />
      <Compile Include="Assets/Scenes/Menu/Scripts/graphicsController.cs" />
-     <Compile Include="Assets/Scenes/Prueba/soccerPlayer.cs" />
      <Compile Include="Assets/Scenes/Menu/Scripts/friccionBola.cs" />
+     <Compile Include="Assets/cameraControl.cs" />
      <Compile Include="Assets/ReboteEsfera.cs" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />

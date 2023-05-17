@@ -46,3 +46,10 @@ public class MoverChapa : MonoBehaviour
     }
 }
 
+public class ClickDetection : MonoBehaviour{
+        private void OnMouseDown(){
+            Debug.Log("Objeto clicado: " + gameObject.name);
+            // Realiza las acciones que deseas cuando se hace clic en el objeto
+        }
+    }
+
