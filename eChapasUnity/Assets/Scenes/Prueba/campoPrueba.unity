@@ -521,8 +521,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1137613872}
-  orbitSpeed: 5
-  distance: 10
+  rotationSpeed: 5
+  launchForce: 10
 --- !u!1001 &455422393
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -828,7 +828,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8734cb24ed76e781d92c7f299a5fb4ec, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: 0.42
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8734cb24ed76e781d92c7f299a5fb4ec, type: 3}
       propertyPath: m_LocalPosition.z
@@ -866,6 +866,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jugador
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8734cb24ed76e781d92c7f299a5fb4ec, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -876,6 +880,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8734cb24ed76e781d92c7f299a5fb4ec, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1137613873}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8734cb24ed76e781d92c7f299a5fb4ec, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1137613876}
   m_SourcePrefab: {fileID: 100100000, guid: 8734cb24ed76e781d92c7f299a5fb4ec, type: 3}
 --- !u!1 &909517521
 GameObject:
@@ -1310,6 +1317,33 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -3927084899969848678, guid: 8734cb24ed76e781d92c7f299a5fb4ec, type: 3}
+--- !u!54 &1137613876
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137613868}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1334217198 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 76462871867dc40278e18a195c4da214, type: 3}

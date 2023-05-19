@@ -6,8 +6,13 @@ public class capMove : MonoBehaviour
 {
     public Camera mainCamera;
     public Camera secondaryCamera;
+    private GameObject player;
 
     private bool isInPlayerCamera = false;
+
+    void Start(){
+        player = GameObject.FindWithTag("Player");
+    }
 
     void Update(){
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -33,19 +38,7 @@ public class capMove : MonoBehaviour
         Camera.main.enabled = false;
         secondaryCamera.enabled = true;
         isInPlayerCamera = true;
-        /*
-        // Calcula la posición objetivo de la cámara secundaria
-    Vector3 targetPosition = transform.position + (transform.right * 2) + (transform.up * 2 + (transform.forward * 1));
-
-    // Calcula la rotación objetivo de la cámara secundaria
-    Quaternion targetRotation = Quaternion.Euler(45f, transform.eulerAngles.y, 0f);
-
-    // Mueve y rota la cámara secundaria hacia la posición y rotación objetivo
-        secondaryCamera.transform.position = targetPosition;
-        secondaryCamera.transform.rotation = targetRotation;
-
-        // Apunta la cámara secundaria hacia este objeto
-        secondaryCamera.transform.LookAt(transform);
-        */
+        // Llama al método "MyFunction" en todos los componentes del objeto con el nombre del componente específico
+        player.SendMessage("setIsInPlayerCamera", true);
     }
 }
