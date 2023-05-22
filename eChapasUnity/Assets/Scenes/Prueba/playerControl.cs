@@ -4,11 +4,16 @@ public class PlayerControl : MonoBehaviour
 {
     public Transform target; // El objeto alrededor del cual la cámara girará
     public float rotationSpeed = 5f; // Velocidad de rotación de la cámara
-    public float launchForce = 10f; // Fuerza de lanzamiento del objeto
-
-    private bool isInPlayerCamera;
 
     private Vector3 offset; // Distancia entre la cámara y el objeto
+    private bool isInPlayerCamera;
+
+    public float minForce = 10f; // Fuerza mínima del disparo
+    public float maxForce = 100f; // Fuerza máxima del disparo
+    public float maxHoldTime = 2f; // Tiempo máximo de presión
+
+    private bool isCharging = false; // Indica si se está cargando el disparo
+    private float holdTime = 0f; // Tiempo de presión
 
     private void Start()
     {
@@ -32,20 +37,52 @@ public class PlayerControl : MonoBehaviour
         // Hace que la cámara mire hacia el objeto
         transform.LookAt(target);
 
-        //Debug.Log("Antes del click: " + isInPlayerCamera);
-        // Lanza el objeto en la dirección del eje X cuando se hace clic con el ratón
-        if (Input.GetMouseButtonDown(0) && isInPlayerCamera)
-        {
-            Debug.Log("Tiro");
-            Vector3 launchDirection = transform.forward; // Obtiene la dirección del eje X de la cámara
-            target.GetComponent<Rigidbody>().AddForce(launchDirection * launchForce, ForceMode.Impulse);
-        }
+        if(Input.GetKeyDown(KeyCode.Space)) { StartCharging(); }
+
+        if(Input.GetKey(KeyCode.Space)) { ContinueCharging(); }
+
+        if (Input.GetKeyUp(KeyCode.Space)) { Shoot(); }
     }
 
-    private void OnEnable(){
-        Debug.Log("Camara habilitada " + isInPlayerCamera);
-        isInPlayerCamera = true;
-    }
+    private void OnEnable(){ isInPlayerCamera = true; }
 
     private void OnDisable(){ isInPlayerCamera = false; }
+
+    private void StartCharging()
+    {
+        isCharging = true;
+        holdTime = 0f;
+    }
+
+    private void ContinueCharging(){
+        if (!isCharging)
+        {
+            return;
+        }
+
+        holdTime += Time.deltaTime;
+        holdTime = Mathf.Clamp(holdTime, 0f, maxHoldTime); // Limitar el tiempo máximo de presión
+
+        // Calcular la fuerza del disparo según el tiempo de presión
+        float force = Mathf.Lerp(minForce, maxForce, holdTime / maxHoldTime);
+        Debug.Log("Fuerza del disparo: " + force);
+    }
+
+    private void Shoot()
+    {
+        if (!isCharging)
+        {
+            return;
+        }
+
+        // Realizar la acción de disparo aquí, por ejemplo, aplicar una fuerza al Rigidbody del proyectil
+        float force = Mathf.Lerp(minForce, maxForce, holdTime / maxHoldTime);
+        Debug.Log("Tiro");
+        Vector3 launchDirection = transform.forward; // Obtiene la dirección del eje X de la cámara
+        target.GetComponent<Rigidbody>().AddForce(launchDirection * force, ForceMode.Impulse);
+
+        // Reiniciar las variables de carga
+        isCharging = false;
+        holdTime = 0f;
+    }
 }
