@@ -2,13 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class matchControl : MonoBehaviour
 {
-     public float matchDuration = 90f; // Total match duration in seconds
+    public float matchDuration = 90f; // Total match duration in seconds
     public TextMeshProUGUI teamAGoalsText; // TextMeshProUGUI to display goals for Team A
     public TextMeshProUGUI teamBGoalsText; // TextMeshProUGUI to display goals for Team B
     public TextMeshProUGUI remainingTimeText; // TextMeshProUGUI to display remaining time
+    public List<Sprite> teamShields;
+    public Image teamShieldImage1;
+    public Image teamShieldImage2;
 
     private float remainingTime; // Remaining time in the match
     private int teamAGoals = 0; // Goals for Team A
@@ -17,6 +21,9 @@ public class matchControl : MonoBehaviour
     private void Start()
     {
         remainingTime = matchDuration;
+        teamShieldImage1.sprite = teamShields[PlayerPrefs.GetInt("team1")];
+        teamShieldImage2.sprite = teamShields[PlayerPrefs.GetInt("team2")];
+        Debug.Log("Equipo 1: " + PlayerPrefs.GetInt("team1"));
         UpdateTexts();
     }
 

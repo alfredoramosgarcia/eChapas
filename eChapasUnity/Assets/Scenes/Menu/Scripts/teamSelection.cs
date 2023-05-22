@@ -2,10 +2,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 
-public class Team {
-    public Sprite teamShield;
-}
-
 public class teamSelection : MonoBehaviour
 {
     public List<string> sTeams;
@@ -15,6 +11,8 @@ public class teamSelection : MonoBehaviour
     public Text teamNameText;
 
     private int currentTeamIndex;
+
+    public int player;
 
     private void Start(){
         ShowCurrentTeamInfo();
@@ -33,7 +31,12 @@ public class teamSelection : MonoBehaviour
     }
 
     private void ShowCurrentTeamInfo(){
+        selectTeam();
         teamShieldImage.sprite = teamShields[currentTeamIndex];
         teamNameText.text = sTeams[currentTeamIndex];
+    }
+
+    private void selectTeam(){
+        PlayerPrefs.SetInt("team" + player, currentTeamIndex);
     }
 }
