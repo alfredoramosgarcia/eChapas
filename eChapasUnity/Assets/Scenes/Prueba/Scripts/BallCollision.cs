@@ -11,11 +11,19 @@ public class BallCollision : MonoBehaviour
     private int contadorLocal = 0;
     private int contadorVisitante = 0;
 
+    private GameObject match;
+    private MatchControl matchControl;
+    private PlacePlayers placePlayers;
+
     private void Start()
     {
         // Obtener el componente Rigidbody del balón al inicio
         ballRigidbody = GetComponent<Rigidbody>();
-        Debug.Log("Marcador: " + contadorLocal + "-" + contadorVisitante);
+
+        match = GameObject.FindWithTag("Match");
+        matchControl = match.GetComponent<MatchControl>();
+        placePlayers = match.GetComponent<PlacePlayers>();
+
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -32,9 +40,7 @@ public class BallCollision : MonoBehaviour
             // Habilitar el componente Rigidbody del balón para que vuelva a moverse
             ballRigidbody.isKinematic = false;
 
-            // Incrementar el contador de la portería local
-            contadorLocal++;
-            Debug.Log("Marcador: " + contadorLocal + "-" + contadorVisitante);
+            matchControl.ScoreGoalTeamLoc();
         }
 
         // Verificar si el objeto colisionado es la portería visitante
@@ -43,15 +49,12 @@ public class BallCollision : MonoBehaviour
             // Volver a la posición inicial del balón
             transform.position = initialPosition;
 
-            // Volver a la posición inicial del jugador
-            playerObject.transform.position = playerInitialPosition;
+            //placePlayer()
 
             // Habilitar el componente Rigidbody del balón para que vuelva a moverse
             ballRigidbody.isKinematic = false;
 
-            // Incrementar el contador de la portería visitante
-            contadorVisitante++;
-            Debug.Log("Marcador: " + contadorLocal + "-" + contadorVisitante);
+            matchControl.ScoreGoalTeamVis();
         }
 
          

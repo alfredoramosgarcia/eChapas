@@ -42,14 +42,14 @@ public class MatchControl : MonoBehaviour
         UpdateTexts();
     }
 
-    public void ScoreGoalTeamA()
+    public void ScoreGoalTeamLoc()
     {
         teamAGoals++;
         UpdateTexts();
         Debug.Log("Goal for Team A!");
     }
 
-    public void ScoreGoalTeamB()
+    public void ScoreGoalTeamVis()
     {
         teamBGoals++;
         UpdateTexts();
