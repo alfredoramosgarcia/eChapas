@@ -15,8 +15,14 @@ public class PlayerControl : MonoBehaviour
     private bool isCharging = false; // Indica si se está cargando el disparo
     private float holdTime = 0f; // Tiempo de presión
 
+    private GameObject match;
+    private MatchControl matchControl;
+
     private void Start()
     {
+        match = GameObject.FindWithTag("Match");
+        matchControl = match.GetComponent<MatchControl>();
+        SetTarget();
         // Calcula la distancia inicial entre la cámara y el objeto
         offset = new Vector3(0f, 2f, -5f); // Ajusta los valores según tu preferencia
     }
@@ -37,6 +43,9 @@ public class PlayerControl : MonoBehaviour
         // Hace que la cámara mire hacia el objeto
         transform.LookAt(target);
 
+        // Rota el target solo sobre el eje Y
+    target.Rotate(Vector3.up, rotationAngle, Space.World);
+
         if(Input.GetKeyDown(KeyCode.Space)) { StartCharging(); }
 
         if(Input.GetKey(KeyCode.Space)) { ContinueCharging(); }
@@ -46,17 +55,14 @@ public class PlayerControl : MonoBehaviour
 
     private void OnEnable(){ 
         isInPlayerCamera = true;
-        FindObjectOfType<changeCamera>().onClicked.AddListener(SetTarget);
-
     }
 
     private void OnDisable(){
         isInPlayerCamera = false;
-        FindObjectOfType<changeCamera>().onClicked.RemoveListener(SetTarget);
     }
 
-    public void SetTarget(GameObject clickedObject){
-        target = clickedObject.transform;
+    public void SetTarget(){
+        target = matchControl.GetSelectedPlayer().transform;
     }
 
     private void StartCharging()

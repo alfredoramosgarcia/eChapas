@@ -1,24 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class changeCamera : MonoBehaviour
 {
     public int playerNum;
     public Camera mainCamera;
     public GameObject playerCamera;
-    public UnityEvent<GameObject> onClicked;
-    private GameObject player;
-
-    private PlayerControl playerControl;
+    
+    private GameObject match;
+    private MatchControl matchControl;
     private turnControl turnScript;
     
-    private bool isInPlayerCamera = false; // Para controlar en que camara no encontramos
+    private bool isInPlayerCamera = false; // Para controlar en que camara nos encontramos
 
     void Start(){
-        player = GameObject.FindWithTag("Player");
-        playerControl = player.GetComponent<PlayerControl>();
+        match = GameObject.FindWithTag("Match");
+        matchControl = match.GetComponent<MatchControl>();
         turnScript = FindObjectOfType<turnControl>();
     }
 
@@ -30,9 +28,10 @@ public class changeCamera : MonoBehaviour
 
     // click en objeto
     private void OnMouseDown(){
+        Debug.Log("Jugador clicado");
         if(!isInPlayerCamera && turnScript.GetCurrentTurn() == playerNum){
             MoveSecondaryCameraToTarget();
-            onClicked.Invokey(gameObject);
+            matchControl.SetSelectedPlayer(gameObject);
         }
     }
 
@@ -43,7 +42,7 @@ public class changeCamera : MonoBehaviour
         Camera.main.enabled = false;
         playerCamera.SetActive(true);
         isInPlayerCamera = true;
-        playerControl.target = gameObject.transform;
+        //playerControl.target = gameObject.transform;
     }
 
     // Deshabilitar camara de jugador

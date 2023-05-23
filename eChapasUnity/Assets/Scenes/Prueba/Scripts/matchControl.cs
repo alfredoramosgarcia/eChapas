@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-public class matchControl : MonoBehaviour
+public class MatchControl : MonoBehaviour
 {
     public float matchDuration = 90f; // Total match duration in seconds
     public TextMeshProUGUI teamAGoalsText; // TextMeshProUGUI to display goals for Team A
@@ -17,6 +17,8 @@ public class matchControl : MonoBehaviour
     private float remainingTime; // Remaining time in the match
     private int teamAGoals = 0; // Goals for Team A
     private int teamBGoals = 0; // Goals for Team B
+
+    GameObject selectedPlayer;
 
     private void Start()
     {
@@ -71,5 +73,13 @@ public class matchControl : MonoBehaviour
         teamAGoalsText.text = teamAGoals.ToString();
         teamBGoalsText.text = teamBGoals.ToString();
         remainingTimeText.text = formattedTime;
+    }
+
+    public void SetSelectedPlayer(GameObject clickedObject){
+        selectedPlayer = clickedObject;
+    }
+
+    public GameObject GetSelectedPlayer(){
+        return selectedPlayer;
     }
 }
