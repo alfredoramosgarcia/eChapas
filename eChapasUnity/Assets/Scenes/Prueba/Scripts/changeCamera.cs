@@ -1,17 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class changeCamera : MonoBehaviour
 {
     public int playerNum;
     public Camera mainCamera;
     public GameObject playerCamera;
+    public UnityEvent<GameObject> onClicked;
     private GameObject player;
 
     private PlayerControl playerControl;
     private turnControl turnScript;
-
+    
     private bool isInPlayerCamera = false; // Para controlar en que camara no encontramos
 
     void Start(){
@@ -28,8 +30,10 @@ public class changeCamera : MonoBehaviour
 
     // click en objeto
     private void OnMouseDown(){
-        if(!isInPlayerCamera && turnScript.GetCurrentTurn() == playerNum)
+        if(!isInPlayerCamera && turnScript.GetCurrentTurn() == playerNum){
             MoveSecondaryCameraToTarget();
+            onClicked.Invokey(gameObject);
+        }
     }
 
     // Habilitar camara de jugador
@@ -42,7 +46,7 @@ public class changeCamera : MonoBehaviour
         playerControl.target = gameObject.transform;
     }
 
-     // Deshabilitar camara de jugador
+    // Deshabilitar camara de jugador
     public void ExitPlayerCamera(){
         playerCamera.SetActive(false);
         mainCamera.enabled = true;

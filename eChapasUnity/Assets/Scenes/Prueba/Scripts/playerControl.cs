@@ -44,9 +44,20 @@ public class PlayerControl : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Space)) { Shoot(); }
     }
 
-    private void OnEnable(){ isInPlayerCamera = true; }
+    private void OnEnable(){ 
+        isInPlayerCamera = true;
+        FindObjectOfType<changeCamera>().onClicked.AddListener(SetTarget);
 
-    private void OnDisable(){ isInPlayerCamera = false; }
+    }
+
+    private void OnDisable(){
+        isInPlayerCamera = false;
+        FindObjectOfType<changeCamera>().onClicked.RemoveListener(SetTarget);
+    }
+
+    public void SetTarget(GameObject clickedObject){
+        target = clickedObject.transform;
+    }
 
     private void StartCharging()
     {
